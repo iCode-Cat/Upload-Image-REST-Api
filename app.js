@@ -6,7 +6,7 @@ const upload = require('./router/upload');
 
 // Settings
 
-const port = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5000;
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
 app.use(cors());
@@ -14,4 +14,4 @@ app.use(cors());
 // Routess
 app.use('/image/upload', upload);
 
-app.listen(port, () => console.log(`Server started on port ${port}`));
+app.listen(PORT, () => console.log(`Server started on port ${port}`));
