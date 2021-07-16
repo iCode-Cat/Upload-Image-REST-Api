@@ -14,4 +14,4 @@ app.use(cors());
 // Routess
 app.use('/image/upload', upload);
 
-app.listen(PORT, () => console.log(`Server started on port ${port}`));
+app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
